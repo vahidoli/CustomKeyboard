@@ -215,7 +215,6 @@ public class MyKeyboard extends LinearLayout {
                 }
             }
         });
-        buttonDelete = findViewById(R.id.button_delete);
 
     }
     public void setInputConnection(InputConnection ic) {
