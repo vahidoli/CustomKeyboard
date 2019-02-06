@@ -10,9 +10,9 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#c9c9f1"
-        android:layout_margin="50dp"
-        android:padding="5dp"
+        android:background="@color/editTextBg"
+        android:layout_margin="30dp"
+        android:padding="10dp"
         android:layout_alignParentTop="true" />
 
     <com.imss.customkeyboard.MyKeyboard

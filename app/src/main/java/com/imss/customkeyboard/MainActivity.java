@@ -4,18 +4,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     private EditText editText;
     private static MainActivity mActivity;
+    InputConnection inputConnection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         editText.setRawInputType(InputType.TYPE_CLASS_TEXT);
         editText.setTextIsSelectable(false);
 
-        InputConnection ic = editText.onCreateInputConnection(new EditorInfo());
-        keyboard.setInputConnection(ic);
+        inputConnection = editText.onCreateInputConnection(new EditorInfo());
+        keyboard.setInputConnection(inputConnection);
 
         editText.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -57,10 +60,5 @@ public class MainActivity extends AppCompatActivity {
 
     public void clearText() {
         editText.setText("");
-    }
-
-    public void removeLast() {
-        String text = editText.getText().toString();
-        editText.setText(text.substring(0, text.length() - 1));
     }
 }

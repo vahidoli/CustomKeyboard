@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Custom Keyboard</string>
+    <string name="entered_text">Entered Text:</string>
+    <string name="ok">OK</string>
+    <string name="key_1">1</string>
+    <string name="key_2">2 ABC</string>
+    <string name="key_3">3 DEF</string>
+    <string name="key_4">4 GHI</string>
+    <string name="key_5">5 JKL</string>
+    <string name="key_6">6 MNO</string>
+    <string name="key_7">7 PQRS</string>
+    <string name="key_8">8 TUV</string>
+    <string name="key_9">9 WXYZ</string>
+    <string name="key_0">0</string>
+    <string name="delete">DELETE</string>
+    <string name="enter">ENTER</string>
 </resources>
